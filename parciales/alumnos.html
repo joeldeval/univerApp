@@ -3,7 +3,15 @@
 </h1>
 <h4>Listado de alumnos en el sistema</h4>
 
-<div class="row" align="right">
+<div class="row" align="left">
+  <div class="input-group">
+    <span class="input-group-addon fa fa-search"></span>
+    <input type="text" ng-model="busqueda" class="form-control" placeholder="Ingrese lo que desea buscar">
+    <br>
+  </div>
+</div>
+
+<div class="row" align="left">
   <a href="#/alumno/nuevo" class="btn btn-info">
     <i class="fa fa-user-plus"></i>
     Crear alumno</a>
@@ -20,11 +28,16 @@
   		<th>Ver</th>
   	</tr>
 
-		<tr ng-repeat="alumno in alumnos | limitTo:posicion | limitTo: -5">
+		<tr ng-repeat="alumno in alumnos | limitTo:posicion | limitTo: -5 | filter:busqueda">
 			<td>{{ alumno.codigo }}</td>
 			<td>{{ alumno.nombre | uppercase }}</td>
 			<td>{{ alumno.telefono | telefono8}}</td>
-			<td><a href="#/alumno/{{ alumno.codigo }}">Ver registro</a></td>
+			<td>
+        <a href="#/alumno/{{ alumno.codigo }}" class="btn btn-primary">Ver</a>
+        <!-- <button class="btn btn-danger" ng-click="eliminarAlumno(alumno.codigo)">
+          <i class="fa fa-trash-o"></i>
+        </button> -->
+      </td>
 		</tr>
 
   </table>

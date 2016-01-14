@@ -7,21 +7,18 @@ $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
 $request =  (array) $request;
 
-$request['nombre'] = strtoupper($request['nombre']);
 
-if ( $request['nombre'] != "" ) {
-$sql = "INSERT INTO alumnos(nombre, telefono, direccion)
-		VALUES ( '". $request['nombre'] ."',
-				 '".$request['telefono']."',
-				 '".$request['direccion']."' )";
+$request['codigo'] = strtoupper($request['codigo']);
 
+
+$sql = "DELETE FROM alumnos
+		WHERE codigo = ".$request['codigo'];
 
 $Hecho = Database::ejecutar_idu($sql);
-}
 $Respuesta = "";
 
 if ($Hecho == "1") {
-	$Respuesta = json_encode( array('err' => false, 'mensaje'=>'Registro Insertado.' ));
+	$Respuesta = json_encode( array('err' => false, 'mensaje'=>'Registro Actualizado.' ));
 }else{
 	$Respuesta = json_encode( array('err' => true, 'mensaje'=> $Hecho ));
 }

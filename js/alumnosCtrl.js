@@ -12,6 +12,10 @@ app.controller('alumnosCtrl', ['$scope','$http', function($scope,$http){
 				});
 
 
+	$scope.eliminarAlumno = function(codigo) {
+		alert("Eliminar " + codigo);
+	}
+
 	$scope.siguientes = function() {
 		if ( $scope.alumnos.length > $scope.posicion ) {
 			$scope.posicion += 5;

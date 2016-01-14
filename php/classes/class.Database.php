@@ -4,10 +4,10 @@
 // Funcion: Se encarga del manejo con la base de datos
 // Descripcion: Tiene varias funciones muy útiles para
 // 				el manejo de registros.
-// 				
+//
 // Ultima Modificación: 17 de marzo de 2015
 // ======================================================
-	
+
 
 class Database{
 
@@ -66,11 +66,11 @@ class Database{
 
 	// ==================================================
 	// 	Funcion que ejecuta el SQL y retorna un ROW
-	// 		Esta funcion esta pensada para SQLs, 
+	// 		Esta funcion esta pensada para SQLs,
 	// 		que retornen unicamente UNA sola línea
 	// ==================================================
 	public function get_Row($sql){
-		
+
 		if(!self::es_string($sql))
 			exit();
 
@@ -87,7 +87,7 @@ class Database{
 
 	// ==================================================
 	// 	Funcion que ejecuta el SQL y retorna un CURSOR
-	// 		Esta funcion esta pensada para SQLs, 
+	// 		Esta funcion esta pensada para SQLs,
 	// 		que retornen multiples lineas (1 o varias)
 	// ==================================================
 	public function get_Cursor($sql){
@@ -122,7 +122,7 @@ class Database{
 		    return "class.Database.class: error ". $mysqli->error;
 		}
 
-		
+
 		$i = 0;
 		while($row = $resultado->fetch_assoc()){
 			$registros[$i]= $row;
@@ -204,13 +204,13 @@ class Database{
 			return $resultado;
 		}
 
-		
+
 
         return $resultado;
 	}
 
 	// ====================================================================
-	// 	Funciones para encryptar y desencryptar data: 
+	// 	Funciones para encryptar y desencryptar data:
 	// 		crypt_blowfish_bydinvaders
 	// ====================================================================
 	function crypt($aEncryptar, $digito = 7) {
@@ -229,7 +229,7 @@ class Database{
             return true;
         else
             return false;
-        
+
     }
 
 }
