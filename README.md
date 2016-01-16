@@ -7,11 +7,30 @@ App realizada con
 
 Instalar un servidor apache:
     
-    sudo yum install httpd.
+    sudo dnf install httpd.
 
 Iniciar el servidor:
 
     sudo service httpd start.
+    
+Instalar e iniciar MariaDB:
+
+    sudo yum install mysql mysql-server
+    sudo service mysqld start
+ 
+ Agrega una contraseña a MariaDB:
+ 
+     sudo /usr/bin/mysql_secure_installation.
+     
+ Instala PHP:
+ 
+     sudo yum install php php-mysql
+ 
+ Inicia el servidor y MariaDB al encender la PC:
+ 
+    sudo chkconfig httpd on
+    sudo chkconfig mysqld on
+
 
 
 [1]: https://angular.io/    "AngularJS"
