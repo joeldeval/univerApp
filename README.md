@@ -6,7 +6,8 @@ App realizada con
   * [MariaDB][3]
 
 Para instalar php:
-    sudo dnf install php
+    
+    sudo dnf install php.
 
 
 [1]: https://angular.io/    "AngularJS"
