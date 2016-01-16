@@ -1,5 +1,9 @@
 # univerApp
-App realizada en Angular y php
+App realizada con [Angular] (fontend)
+
+API [PHP] y [MariaDB] 
 
 
-npm install
+
+
+
