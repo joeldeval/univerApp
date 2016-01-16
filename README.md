@@ -5,9 +5,13 @@ App realizada con
   * [PHP][2] API
   * [MariaDB][3]
 
-Para instalar php:
+Instalar un servidor apache:
     
-    sudo dnf install php.
+    sudo yum install httpd.
+
+Iniciar el servidor:
+
+    sudo service httpd start.
 
 
 [1]: https://angular.io/    "AngularJS"
