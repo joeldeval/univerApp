@@ -1,11 +1,16 @@
 # univerApp
 App realizada con 
 
-  - [Angular] (https://angular.io/)
+  * [1]
+  * [2] API
+  * [3]
 
-  - Una API con [PHP] (http://php.net/)  
-  
-  - [MariaDB] (https://mariadb.org/)
+
+
+
+[1]: https://angular.io/    "AngularJS"
+[2]: http://php.net/        "PHP"
+[3]: https://mariadb.org/   "MariaDB"
 
 
 
