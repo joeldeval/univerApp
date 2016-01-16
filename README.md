@@ -1,9 +1,9 @@
 # univerApp
-App realizada con [Angular] https://angular.io/
+App realizada con [Angular] (https://angular.io/)
 
-API [PHP] http://php.net/
+API [PHP] (http://php.net/)
 y 
-[MariaDB] https://mariadb.org/
+[MariaDB] (https://mariadb.org/)
 
 
 
