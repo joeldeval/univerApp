@@ -2,8 +2,8 @@
 App realizada con 
 
   * [Angular][1]
-  * [PHP][2] API
-  * > sudo dnf install php7
+  * [PHP][2] API:
+   sudo dnf install php7
   * [MariaDB][3]
 
 
