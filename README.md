@@ -1,9 +1,9 @@
 # univerApp
 App realizada con 
 
-  * [1]
-  * [2] API
-  * [3]
+  * [Angular][1]
+  * [PHP][2] API
+  * [MariaDB][3]
 
 
 
